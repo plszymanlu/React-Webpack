@@ -11,15 +11,18 @@ class Header extends React.Component {
     return (
       <header className={styles.component}>
         <Container>
-          <div className={styles.wrapper}>
-            <Link to='/' className={styles.logo}>
-              <Icon name='dog' />
-            </Link>
-            <Search />
-            <nav>
-              <NavLink exact to='/' activeClassName='active'>Home</NavLink>
-              <NavLink exact to='/info' activeClassName='active'>Info</NavLink>
-            </nav>
+          <div>
+            <div className={styles.wrapper}>
+              <Link to='/' className={styles.logo}>
+                <Icon name='dog' />
+              </Link>
+              <Search />
+              <nav>
+                <NavLink exact to='/' activeClassName='active'>Home</NavLink>
+                <NavLink exact to='/info' activeClassName='active'>Info</NavLink>
+                <NavLink exact to='/faq' activeClassName='active'>FAQ</NavLink>
+              </nav>
+            </div>
           </div>
         </Container>
       </header>

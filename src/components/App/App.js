@@ -1,10 +1,13 @@
 import React from 'react';
 import Home from '../Home/HomeContainer';
 import Info from '../Info/Info';
+import Faq from '../FAQ/Faq';
+//import List from '../List/ListContainer';
 import { BrowserRouter, Route } from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout';
 import { AnimatedSwitch } from 'react-router-transition';
 import styles from '../App/App.scss';
+//import SearchResults from '../SearchResults/SearchResultsContainer';
 
 const App = () => (
   <BrowserRouter>
@@ -17,6 +20,7 @@ const App = () => (
       >
         <Route exact path="/" component={Home} />
         <Route exact path="/info" component={Info} />
+        <Route exact path='/faq' component={Faq} />
       </AnimatedSwitch>
     </MainLayout>
   </BrowserRouter>

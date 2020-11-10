@@ -14,10 +14,4 @@ const Info = () => (
   </div>
 );
 
-/* Info.propTypes = {
-  title: PropTypes.node.isRequired,
-  image: PropTypes.string,
-  text: PropTypes.string,
-}; */
-
 export default Info;
