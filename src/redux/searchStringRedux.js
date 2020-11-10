@@ -4,8 +4,8 @@ export const countAllCards = ({ cards }) => cards.length;
 export const countVisibleCards = ({ cards, searchString }) => cards.filter((card) => new RegExp(searchString, 'i').test(card.title)).length;
 
 // action name creator
-const reducer = 'searchString';
-const createActionName = () => 'app/${reducerName}/${name}';
+const reducerName = 'searchString';
+const createActionName = () => `app/${reducerName}/${name}`;
 
 // actions types
 export const CHANGE = createActionName('CHANGE');
