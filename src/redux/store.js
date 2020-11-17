@@ -10,6 +10,8 @@ const initialState = {
   lists: initialStoreData.lists,
   columns: initialStoreData.columns,
   cards: initialStoreData.cards,
+  info: initialStoreData.info,
+  faq: initialStoreData.faq,
   searchString: '',
 };
 

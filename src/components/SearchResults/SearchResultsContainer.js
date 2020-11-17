@@ -1,9 +1,15 @@
 import { connect } from 'react-redux';
-import SearchResults from './SearchResults';
-import { getCardsForSearchResults } from '../../redux/cardsRedux';
+import { getCardsForSearch} from '../../redux/cardsRedux.js';
+import { createAction_changeSearchString } from '../../redux/searchStringRedux';
+import SearchResult from './SearchResult.js';
+
 
 const mapStateToProps = (state, props) => ({
-  cards: getCardsForSearchResults(state, props.match.params.title),
+  cards: getCardsForSearch(state, props.match.params.searchString),
 });
 
-export default connect(mapStateToProps)(SearchResults);
+const mapDispatchToProps = (dispatch) => ({
+  changeSearchString: newSearchString => dispatch(createAction_changeSearchString(newSearchString)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchResult);

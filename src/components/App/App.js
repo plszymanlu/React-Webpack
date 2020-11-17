@@ -1,13 +1,13 @@
 import React from 'react';
 import Home from '../Home/HomeContainer';
-import Info from '../Info/Info';
-import Faq from '../FAQ/Faq';
-//import List from '../List/ListContainer';
-import { BrowserRouter, Route } from 'react-router-dom';
+import Info from '../Info/InfoContainer';
+import Faq from '../Faq/FaqContainer';
+import {BrowserRouter, Route} from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout';
-import { AnimatedSwitch } from 'react-router-transition';
-import styles from '../App/App.scss';
-//import SearchResults from '../SearchResults/SearchResultsContainer';
+import {AnimatedSwitch} from 'react-router-transition';
+import styles from './App';
+import List from '../List/ListContainer';
+import SearchResult from '../SearchResult/SearchResultContainer';
 
 const App = () => (
   <BrowserRouter>
